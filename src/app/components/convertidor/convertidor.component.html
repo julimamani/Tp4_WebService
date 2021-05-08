@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontwesome-free/css/all.min.css">
+    <link rel="stylesheet" href="MyStyle.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 text-center d-none d-sm-block table-responsive ">
+                    <table class="table table-responsive table-hover table-image table-striped table-light">
+                        <thead>
+                            <tr>
+                              <th scope="col" colspan="10" class="text-center" style="color: white; background-color: rgb(15, 115, 155);">Conversor de Divisas</th>
+                            </tr>
+                            <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                <img src="imagenes/united states.webp" class="img-thumbnail img-fluid" alt="USD" style="width: 50px; height: 30px"> USD
+                            </th>
+                            <th scope="col" >
+                                <img src="imagenes/Bandera_de_la_Union_Europea.png" class="img-thumbnail img-fluid" style="width: 50px; height: 30px"> EUR
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/Bandera-del-Reino-Unido.png" class="img-thumbnail img-fluid" alt="GBP"style="width: 50px; height: 30px">GBP
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/bandera-japonesa.jpg" class="img-thumbnail img-fluid" alt="JPY" style="width: 50px; height: 30px"> JPY
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/china.png" class="img-thumbnail img-fluid" alt="CNY" style="width: 50px; height: 30px"> CNY
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/Bandera_Australia.jpg" class="img-thumbnail img-fluid" alt="AUD" style="width: 50px; height: 30px"> AUD
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/bitcoin.jpg" alt="BTC" style="width: 50px; height: 30px"> BTC
+                            </th>
+                            <th scope="col">
+                                <img src="imagenes/Flag_of_Argentina.png" class="img-thumbnail " alt="ARS" style="width: 50px; height: 30px"> ARS
+                            </th>
+                            </tr>
+                        </thead>
+                       <tbody>
+                            <tr id="divisas">
+                              <th scope="row" rowspan="2" >
+                                  <img src="imagenes/united states.webp" class="img-thumbnail" style="width: 50px;" >
+                             </th>
+                             <td style="color: black; text-decoration: none;">1 USD</td>
+                             <td style="color: black; text-decoration: none;">1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                              <td>1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                            </tr>
+                            <tr id="divisas">
+                               <td style="color: black; ">inverse</td>
+                               <td style="color: black;">1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                                <td>1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                              </tr>
+                            <tr id="divisas">
+                              <th scope="row" rowspan="2">
+                                  <img src="imagenes/Bandera_de_la_Union_Europea.png" class="img-thumbnail" style="width: 50px;">
+                              </th>
+                              <td style="color: black; ">1 EUR </td>
+                             <td>1.000000</td><td style="color: black;">1.000000</td><td >1.000000</td><td>1.000000</td>
+                              <td>1.000000</td><td >1.000000</td><td>1.000000</td><td>1.000000</td>
+                            </tr>
+                            <tr id="divisas">
+                                <td style="color: black; "> inverse </td>
+                                <td>1.000000</td><td  style="color: black;">1.000000</td><td>1.000000</td><td>1.000000</td>
+                                 <td>1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                               </tr>
+                             <tr>
+                            <tr id="divisas">
+                              <th scope="row" rowspan="2">
+                                  <img src="imagenes/Bandera-del-Reino-Unido.png" class="img-thumbnail" style="width: 50px; ">
+                              </th>
+                              <td style="color: black; ">1 GBP </td>
+                             <td>1.000000</td><td>1.000000</td><td  style="color: black;">1.000000</td><td>1.000000</td>
+                              <td>1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                            </tr>
+                            <tr id="divisas">
+                                <td style="color: black; ">inverse</td>
+                                <td>1.000000</td><td>1.000000</td><td  style="color: black;">1.000000</td><td>1.000000</td>
+                                 <td>1.000000</td><td>1.000000</td><td>1.000000</td><td>1.000000</td>
+                               </tr>
+                             <tr>
+                            <tr id="divisas">
+                                <th scope="row" rowspan="2">
+                                    <img src="imagenes/bandera de rusia.png" class="img-thumbnail img-fluid" style="width: 50px;">
+                                </th>
+                                <td style="color: black; ">1 RUB </td>
+                                 <td>0.013226</td><td>0.013226</td><td>0.013226</td><td>0.013226</td>
+                                  <td>0.013226</td><td>0.013226</td><td>0.013226</td><td>0.013226</td>
+                              </tr>
+                              <tr id="divisas">
+                                <td style="color: black; ">inverse </td>
+                                <td>75.61143</td><td>75.61143</td><td>75.61143</td><td>75.61143</td>
+                                 <td>75.61143</td><td>75.61143</td><td>75.61143</td><td>75.61143</td>
+                               </tr>
+                             <tr>
+                          </tbody>
+                    </table>
+                </div>
+                    <div class="col col-sm-4 container-fluid">
+                        <form id="conversor" >
+                                <div>Conversor De Divisas<hr></div>
+                                <div class="mb-3">
+                                    <label for="exampleInput1" class="form-label">Cantidad</label>
+                                    <input type="text" class="form-control" id="exampleInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInput1" class="form-label">De</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>USD Dólares EEUU</option>
+                                        <option value="1">ARS Pesos Argentinos</option>
+                                        <option value="2">RUB Rublos rusos</option>
+                                        <option value="3">EUR Euro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">A</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>ARS Pesos Argentinos</option>
+                                        <option value="1">USD Dólares EEUU</option>
+                                        <option value="2">RUB Rublos rusos</option>
+                                        <option value="3">EUR Euro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleInput">
+                                </div>
+                                <div class="d-grid gap-2 mb-4" >
+                                    <button type="button" class="btn btn-warning btn-lg" >
+                                        Convertir
+                                        <i class="bi bi-arrow-right"></i>
+                                        </button>
+                                </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="float-end"><a href="#">Back to top</a></p>
+     <p style="color: black">&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
