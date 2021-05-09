@@ -17,18 +17,6 @@
       text-decoration: inherit;
   }
   
-  body{
-    background-color: rgb(182, 178, 178);
-  }
-  footer{
-    border-width: 20px;
-    margin: 0 auto;
-    margin-top: 20px;
-   margin-bottom: auto;
-   padding: 10px 20px;
-   box-sizing:border-box;
-  }
-  
   #divisas{
    color: rgb(38, 92, 240);;
   }
@@ -36,10 +24,7 @@
   table{
     border-color: white; border-width: 15px; border-style: solid;
   }
-  
-  
-  
-  
+
   p {
     color: #fff
   }
