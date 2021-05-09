@@ -1,12 +1,4 @@
-#conversor{
-    background: linear-gradient(to top right,  rgb(40, 40, 133),rgb(75, 75, 248));
-    border-color: white; border-style: solid;
-    color: aliceblue;
-    border-width: 10px;
-    margin: 0 auto;
-   margin-bottom: 15px;
-   padding: 10px 15px;
-  }
+
   .card{
     background-color:rgb(201, 193, 193);
   }
@@ -16,15 +8,6 @@
       font-weight: normal;
       text-decoration: inherit;
   }
-  
-  #divisas{
-   color: rgb(38, 92, 240);;
-  }
-  
-  table{
-    border-color: white; border-width: 15px; border-style: solid;
-  }
-
   p {
     color: #fff
   }

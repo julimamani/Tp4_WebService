@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    background-color: rgb(182, 178, 178);
-  }
-  
+
+#content-wrap {
+  padding-bottom: 2rem;    /* Footer height */
+  background-color: rgb(182, 178, 178);
+}
